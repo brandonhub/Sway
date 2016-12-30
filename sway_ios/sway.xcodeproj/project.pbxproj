@@ -1,0 +1,423 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7161C85C6E4E4D776519D3BF /* Pods_sway.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 496ECCA69D05F2FD82C94E4E /* Pods_sway.framework */; };
+		CA08661D1DA4D22D0064CB53 /* Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA08661C1DA4D22D0064CB53 /* Functions.swift */; };
+		CA0866231DA4D94E0064CB53 /* SessionListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0866221DA4D94E0064CB53 /* SessionListViewController.swift */; };
+		CA0866251DA4DDF70064CB53 /* SessionPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0866241DA4DDF70064CB53 /* SessionPreview.swift */; };
+		CA0866271DA4E0E60064CB53 /* SessionListViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0866261DA4E0E60064CB53 /* SessionListViewCell.swift */; };
+		CA2680541DADD4B600E53836 /* SessionPreferencesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2680531DADD4B600E53836 /* SessionPreferencesViewController.swift */; };
+		CACEDBAF1DA4AAD50038A416 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CACEDBAE1DA4AAD50038A416 /* FBSDKCoreKit.framework */; };
+		CACEDBB21DA4AADF0038A416 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CACEDBB01DA4AADF0038A416 /* FBSDKLoginKit.framework */; };
+		CACEDBB31DA4AADF0038A416 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CACEDBB11DA4AADF0038A416 /* FBSDKShareKit.framework */; };
+		CACEDBB51DA4B0970038A416 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CACEDBB41DA4B0970038A416 /* Bolts.framework */; };
+		CAE003621DA4A40B00A662D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE003611DA4A40B00A662D9 /* AppDelegate.swift */; };
+		CAE003641DA4A40B00A662D9 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE003631DA4A40B00A662D9 /* SettingsViewController.swift */; };
+		CAE003691DA4A40C00A662D9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAE003671DA4A40C00A662D9 /* Main.storyboard */; };
+		CAE0036B1DA4A40C00A662D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAE0036A1DA4A40C00A662D9 /* Assets.xcassets */; };
+		CAE0036E1DA4A40C00A662D9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAE0036C1DA4A40C00A662D9 /* LaunchScreen.storyboard */; };
+		CAE003761DA4A7E100A662D9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CAE003751DA4A7E100A662D9 /* GoogleService-Info.plist */; };
+		CAF5D6D91DA606A900614B02 /* SessionDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF5D6D81DA606A900614B02 /* SessionDetailViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		12B1AA561703CBC6928BBAB4 /* Pods-sway.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sway.debug.xcconfig"; path = "Pods/Target Support Files/Pods-sway/Pods-sway.debug.xcconfig"; sourceTree = "<group>"; };
+		38772459F0446CC4923592B3 /* Pods-sway.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sway.release.xcconfig"; path = "Pods/Target Support Files/Pods-sway/Pods-sway.release.xcconfig"; sourceTree = "<group>"; };
+		496ECCA69D05F2FD82C94E4E /* Pods_sway.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_sway.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA08661C1DA4D22D0064CB53 /* Functions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Functions.swift; sourceTree = "<group>"; };
+		CA0866221DA4D94E0064CB53 /* SessionListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionListViewController.swift; sourceTree = "<group>"; };
+		CA0866241DA4DDF70064CB53 /* SessionPreview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionPreview.swift; sourceTree = "<group>"; };
+		CA0866261DA4E0E60064CB53 /* SessionListViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionListViewCell.swift; sourceTree = "<group>"; };
+		CA2680531DADD4B600E53836 /* SessionPreferencesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionPreferencesViewController.swift; sourceTree = "<group>"; };
+		CACEDBAE1DA4AAD50038A416 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		CACEDBB01DA4AADF0038A416 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		CACEDBB11DA4AADF0038A416 /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKShareKit.framework; sourceTree = "<group>"; };
+		CACEDBB41DA4B0970038A416 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		CAE0035E1DA4A40B00A662D9 /* sway.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sway.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CAE003611DA4A40B00A662D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CAE003631DA4A40B00A662D9 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		CAE003681DA4A40C00A662D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CAE0036A1DA4A40C00A662D9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CAE0036D1DA4A40C00A662D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CAE0036F1DA4A40C00A662D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CAE003751DA4A7E100A662D9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		CAF5D6D81DA606A900614B02 /* SessionDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionDetailViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CAE0035B1DA4A40B00A662D9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CACEDBB51DA4B0970038A416 /* Bolts.framework in Frameworks */,
+				CACEDBB31DA4AADF0038A416 /* FBSDKShareKit.framework in Frameworks */,
+				7161C85C6E4E4D776519D3BF /* Pods_sway.framework in Frameworks */,
+				CACEDBAF1DA4AAD50038A416 /* FBSDKCoreKit.framework in Frameworks */,
+				CACEDBB21DA4AADF0038A416 /* FBSDKLoginKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		308850C915B1CA69474A44C4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				12B1AA561703CBC6928BBAB4 /* Pods-sway.debug.xcconfig */,
+				38772459F0446CC4923592B3 /* Pods-sway.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		339C2911B042947FA5946E8B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CACEDBAE1DA4AAD50038A416 /* FBSDKCoreKit.framework */,
+				496ECCA69D05F2FD82C94E4E /* Pods_sway.framework */,
+				CACEDBB41DA4B0970038A416 /* Bolts.framework */,
+				CACEDBB01DA4AADF0038A416 /* FBSDKLoginKit.framework */,
+				CACEDBB11DA4AADF0038A416 /* FBSDKShareKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CAE003551DA4A40B00A662D9 = {
+			isa = PBXGroup;
+			children = (
+				CAE003601DA4A40B00A662D9 /* sway */,
+				CAE0035F1DA4A40B00A662D9 /* Products */,
+				308850C915B1CA69474A44C4 /* Pods */,
+				339C2911B042947FA5946E8B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CAE0035F1DA4A40B00A662D9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CAE0035E1DA4A40B00A662D9 /* sway.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CAE003601DA4A40B00A662D9 /* sway */ = {
+			isa = PBXGroup;
+			children = (
+				CAE003611DA4A40B00A662D9 /* AppDelegate.swift */,
+				CA08661C1DA4D22D0064CB53 /* Functions.swift */,
+				CAF5D6D81DA606A900614B02 /* SessionDetailViewController.swift */,
+				CAE003631DA4A40B00A662D9 /* SettingsViewController.swift */,
+				CA0866221DA4D94E0064CB53 /* SessionListViewController.swift */,
+				CA0866261DA4E0E60064CB53 /* SessionListViewCell.swift */,
+				CA2680531DADD4B600E53836 /* SessionPreferencesViewController.swift */,
+				CA0866241DA4DDF70064CB53 /* SessionPreview.swift */,
+				CAE003671DA4A40C00A662D9 /* Main.storyboard */,
+				CAE0036A1DA4A40C00A662D9 /* Assets.xcassets */,
+				CAE0036C1DA4A40C00A662D9 /* LaunchScreen.storyboard */,
+				CAE0036F1DA4A40C00A662D9 /* Info.plist */,
+				CAE003751DA4A7E100A662D9 /* GoogleService-Info.plist */,
+			);
+			path = sway;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CAE0035D1DA4A40B00A662D9 /* sway */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CAE003721DA4A40C00A662D9 /* Build configuration list for PBXNativeTarget "sway" */;
+			buildPhases = (
+				C390ACE888E0F11468604B0C /* 📦 Check Pods Manifest.lock */,
+				CAE0035A1DA4A40B00A662D9 /* Sources */,
+				CAE0035B1DA4A40B00A662D9 /* Frameworks */,
+				CAE0035C1DA4A40B00A662D9 /* Resources */,
+				F8DBFF23283B266B42D18A7C /* 📦 Embed Pods Frameworks */,
+				D1BE549A2A0E7D8D6844CDC5 /* 📦 Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = sway;
+			productName = sway;
+			productReference = CAE0035E1DA4A40B00A662D9 /* sway.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CAE003561DA4A40B00A662D9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = meeks;
+				TargetAttributes = {
+					CAE0035D1DA4A40B00A662D9 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = CAE003591DA4A40B00A662D9 /* Build configuration list for PBXProject "sway" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CAE003551DA4A40B00A662D9;
+			productRefGroup = CAE0035F1DA4A40B00A662D9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CAE0035D1DA4A40B00A662D9 /* sway */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CAE0035C1DA4A40B00A662D9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CAE0036E1DA4A40C00A662D9 /* LaunchScreen.storyboard in Resources */,
+				CAE003761DA4A7E100A662D9 /* GoogleService-Info.plist in Resources */,
+				CAE0036B1DA4A40C00A662D9 /* Assets.xcassets in Resources */,
+				CAE003691DA4A40C00A662D9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C390ACE888E0F11468604B0C /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D1BE549A2A0E7D8D6844CDC5 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-sway/Pods-sway-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F8DBFF23283B266B42D18A7C /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-sway/Pods-sway-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CAE0035A1DA4A40B00A662D9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA0866251DA4DDF70064CB53 /* SessionPreview.swift in Sources */,
+				CA0866271DA4E0E60064CB53 /* SessionListViewCell.swift in Sources */,
+				CAF5D6D91DA606A900614B02 /* SessionDetailViewController.swift in Sources */,
+				CAE003621DA4A40B00A662D9 /* AppDelegate.swift in Sources */,
+				CA0866231DA4D94E0064CB53 /* SessionListViewController.swift in Sources */,
+				CAE003641DA4A40B00A662D9 /* SettingsViewController.swift in Sources */,
+				CA2680541DADD4B600E53836 /* SessionPreferencesViewController.swift in Sources */,
+				CA08661D1DA4D22D0064CB53 /* Functions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CAE003671DA4A40C00A662D9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CAE003681DA4A40C00A662D9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CAE0036C1DA4A40C00A662D9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CAE0036D1DA4A40C00A662D9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CAE003701DA4A40C00A662D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CAE003711DA4A40C00A662D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CAE003731DA4A40C00A662D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 12B1AA561703CBC6928BBAB4 /* Pods-sway.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = sway/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.meeks.sway;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		CAE003741DA4A40C00A662D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 38772459F0446CC4923592B3 /* Pods-sway.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = sway/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.meeks.sway;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CAE003591DA4A40B00A662D9 /* Build configuration list for PBXProject "sway" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CAE003701DA4A40C00A662D9 /* Debug */,
+				CAE003711DA4A40C00A662D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CAE003721DA4A40C00A662D9 /* Build configuration list for PBXNativeTarget "sway" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CAE003731DA4A40C00A662D9 /* Debug */,
+				CAE003741DA4A40C00A662D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CAE003561DA4A40B00A662D9 /* Project object */;
+}
