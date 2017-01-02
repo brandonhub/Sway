@@ -1,0 +1,6 @@
+<h4>Song Tracker</h4>
+<ul>
+    <li *ngFor="let song of trackedSongs | async">
+      {{ song.songName }}
+    </li>
+</ul>

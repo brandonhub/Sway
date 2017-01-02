@@ -1,0 +1,21 @@
+<sway-header [sessionId]="sessionId"></sway-header>
+
+<div class="col-sm-8 col-centered">
+    <h2 class="text-center">{{ (session|async)?.title }}</h2>
+
+    <div class="col-sm-12">
+        <satisfaction [members]="members"></satisfaction>
+        <energy [members]="members"></energy>
+        <volume [members]="members"></volume>
+    </div>
+
+    <div class="col-sm-12">
+        <member-list [members]="members"></member-list>
+        <song-request-list [sessionId]="sessionId"></song-request-list>
+    </div>
+</div>
+
+<mass-message-modal [sessionId]="sessionId" [members]="members"></mass-message-modal>
+<song-tracker [sessionId]="sessionId"></song-tracker>
+
+

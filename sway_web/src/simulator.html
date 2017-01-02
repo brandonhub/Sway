@@ -1,0 +1,120 @@
+
+<script src="https://www.gstatic.com/firebasejs/3.5.0/firebase.js"></script>
+<script>
+    // Initialize Firebase
+    var config = {
+        apiKey: "AIzaSyB437tbD0jE387fUoGCWtE0L2BIsuxSKoA",
+        authDomain: "sway-f02b9.firebaseapp.com",
+        databaseURL: "https://sway-f02b9.firebaseio.com",
+        storageBucket: "sway-f02b9.appspot.com",
+        messagingSenderId: "89858434747"
+    };
+    firebase.initializeApp(config);
+
+    //CONFIGS
+    var MAX_USERS = 6
+    var MAX_SESSIONS = 2
+
+    // UTILITY
+    function getRandomArbitrary(min, max) {
+        return Math.random() * (max - min) + min;
+    }
+
+    function getRandomInt(min, max) {
+        return Math.floor(Math.random() * (max - min + 1)) + min;
+    }
+
+    // RANDOM SIMULATION FUNCTIONS
+    function changeRandomSatisfaction() {
+
+        var userId = getRandomInt(1, MAX_USERS).toString()
+
+        firebase.database().ref('/users/' + userId).once('value').then(function(snapshot) {
+          var sessionId = snapshot.val().currentSession;
+
+          var sessionRef = firebase.database().ref('sessions/' + sessionId + '/members/' + userId);
+          sessionRef.once('value').then(function(snapshot) {
+             satisfaction = snapshot.val().satisfaction
+             firebase.database().ref('sessions/' + sessionId + '/members/' + userId + "/satisfaction").set(!satisfaction);
+          });
+
+        });
+    }
+
+    function changeRandomEnergy() {
+        var userId = getRandomInt(1, MAX_USERS).toString()
+
+        firebase.database().ref('/users/' + userId).once('value').then(function(snapshot) {
+          var sessionId = snapshot.val().currentSession;
+
+          var sessionRef = firebase.database().ref('sessions/' + sessionId + '/members/' + userId);
+          sessionRef.once('value').then(function(snapshot) {
+             energy = getRandomInt(0, 100)
+             firebase.database().ref('sessions/' + sessionId + '/members/' + userId + "/energy").set(energy);
+          });
+
+        });
+    }
+
+    function changeRandomVolume() {
+        var userId = getRandomInt(1, MAX_USERS).toString()
+
+        firebase.database().ref('/users/' + userId).once('value').then(function(snapshot) {
+          var sessionId = snapshot.val().currentSession;
+
+          var sessionRef = firebase.database().ref('sessions/' + sessionId + '/members/' + userId);
+          sessionRef.once('value').then(function(snapshot) {
+             volume = getRandomInt(-1, 1)
+             firebase.database().ref('sessions/' + sessionId + '/members/' + userId + "/volume").set(volume);
+          });
+
+        });
+    }
+
+    function moveRandomUser() {
+
+        var userId = getRandomInt(1, MAX_USERS).toString()
+        var newSessionId = getRandomInt(1, MAX_SESSIONS).toString()
+
+        var userRef = firebase.database().ref('users/' + userId);
+
+        // Remove user from current session
+        firebase.database().ref('/users/' + userId).once('value').then(function(snapshot) {
+          var sessionId = snapshot.val().currentSession;
+
+          firebase.database().ref('sessions/' + sessionId + '/members/' + userId).set(null)
+
+        });
+
+        // Update session on user
+        userRef.once('value').then(function(snapshot) {
+            var displayName = snapshot.val().displayName
+            firebase.database().ref('users/' + userId + '/currentSession').set(newSessionId)
+
+            // Update user on session
+            firebase.database().ref('sessions/' + newSessionId + '/members/' + userId).set(
+                {
+                    displayName: displayName,
+                    satisfaction: true
+                }
+            )
+        });
+    }
+
+    // INFINTIE LOOP
+    move()
+    var calls = 0
+    function move() {
+        if (calls%10 == 0) {   // Every tenth time move a user
+            // moveRandomUser()
+        }
+        else{
+            changeRandomVolume()
+            changeRandomEnergy()
+            changeRandomSatisfaction()
+        }
+        calls++
+        setTimeout(move, 1000);
+    }
+
+</script>

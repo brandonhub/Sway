@@ -1,0 +1,19 @@
+
+<div class="col-sm-6">
+    <h4 class="text-center">Members</h4>
+    <pre *ngFor="let member of members"
+        class="{{member.satisfaction | getClassForValue: 'satisfaction'}} text-center"
+        (click)="onSelect(member)"  [popover]="memberPopover">{{member.displayName}}</pre>
+
+    <popover-content #memberPopover
+                    title={{selectedMember.displayName}}
+                    placement="left"
+                    [animation]="true"
+                    [closeOnClickOutside]="true" >
+        <b>Satisfied: </b> {{selectedMember.satisfaction}} <br/>
+        <b>Energy Preference: </b> {{selectedMember.energy}} <br/>
+        <b>Volume Preference: </b> {{selectedMember.volume}} <br/>
+    </popover-content>
+
+</div>
+

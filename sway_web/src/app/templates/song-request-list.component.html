@@ -1,0 +1,29 @@
+
+<div class="col-sm-6">
+    <h4 class="text-center">Requests</h4>
+    <ul class="list-group">
+        <li *ngFor="let song of songRequests" href="#" class="list-group-item">
+            <div class="image-cropper margin-right">
+                <img class="song-thumbnail" src = "{{song.artworkUrl}}"/>
+            </div>
+            <span class="badge sway-theme">{{song.count}}</span>
+            <span (click)="removeSong(song.trackId)" class="pull-right margin-right">
+                <i class="fa fa-trash"></i>
+            </span>
+            <h5 class="list-group-item-heading overflow-ellipsis">{{song.name}}</h5>
+            <p class="list-group-item-text text-muted overflow-ellipsis">{{song.artist}}
+                <br/>
+                <a class="pull-right small" href="{{song.iTunesUrl}}">
+                    <i class="fa fa-download sway-theme-text"></i>
+
+                </a>
+                <a  (click)="playSong(song.previewUrl)" class="pull-right small margin-right">
+                    <i class="fa fa-play sway-theme-text"></i>
+                </a>
+            </p>
+
+        </li>
+    </ul>
+</div>
+
+
